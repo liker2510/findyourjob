@@ -14,16 +14,26 @@
 <body>
     <header class="header pb-5">
         <div class="container">
-            <div class="row align-items-center py-3">
-                <div class="col-2">
-                    <a href="#" class="logo-link">
+            <div class="d-flex pt-4 d-lg-none align-items-center justify-content-between">
+                    <a href="/" class="logo-link">
+                        <img src="img/header/logo.svg" alt="Logo: FindYourJob">
+                    </a>
+                    <a href="#" class="menu-button">
+                        <img src="img/header/menu-burger.svg" alt="icon: menu-burger">
+                    </a>
+            </div>
+            <!-- /.row -->
+            <div class="row align-items-center py-3 navbar flex-column flex-lg-row justify-content-center">
+                <a href="#" class="close-bt d-lg-none">&times;</a>
+                <div class="col-2 mb-5 mb-lg-0">
+                    <a href="/" class="logo-link">
                         <img src="img/header/logo.svg" alt="Logo: FindYourJob">
                     </a>
                 </div>
                 <!-- /.col -->
-                <div class="col d-flex justify-content-center">
+                <div class="col-lg d-flex justify-content-center mb-5 mb-lg-0">
                     <nav class="nav">
-                        <ul class="menu d-flex">
+                        <ul class="menu d-flex  flex-column flex-lg-row align-items-center">
                             <li class="menu-item"><a href="#" class="menu-link">Главная</a></li>
                             <li class="menu-item"><a href="#" class="menu-link">Вакансии</a></li>
                             <li class="menu-item"><a href="#" class="menu-link">Компании</a></li>
@@ -31,15 +41,15 @@
                     </nav>
                 </div>
                 <!-- /.col -->
-                <div class="col-3 d-flex align-items-center justify-content-end">
+                <div class="col-lg-3 d-flex align-items-center justify-content-center justify-content-lg-end flex-column flex-lg-row">
                     <a href="#" class="button button-link">Войти</a>
                     <a href="#" class=" button button-primary">Регистрация</a>
                 </div>
                 <!-- /.col -->
             </div>
             <!-- /.row -->
-            <div class="row pt-5">
-                <div class="col-5">
+            <div class="row pt-5 hero">
+                <div class="col-xxl-5 col-lg-7 col-md-9">
                     <h1 class="hero-title">Найдите удаленную работу вашей мечты</h1>
                     <p class="hero-text">Создайте резюме или отправьте отклик на вакансию в&nbsp;компании с мировым именем и работайте <br />по свободному графику</p>
                     <form action="#">
@@ -47,7 +57,7 @@
                             <input type="text" class="input" placeholder="Начните поиск">
                             <button class="button-primary">
                                 <img class="button-icon" src="img/header/search.svg" alt="icon: search">
-                                <span class="button-text">Искать вакансии</span>
+                                <span class="button-text d-none d-md-inline-block">Искать вакансии</span>
                             </button>
                         </div>
                     </form>
@@ -59,7 +69,7 @@
                     </div>
                 </div>
                 <!-- /.col-5 -->
-                <div class="col-6 offset-1">
+                <div class="col-xxl-6 offset-xxl-1 col-lg-5 mt-5 mt-lg-0">
                     <img src="img/header/hero-image.svg" alt="image: people with laptops" class="hero-image">
                 </div>
                 <!-- /.col-6 offset-1 -->
@@ -73,31 +83,31 @@
         <div class="container">
             <h2 class="section-title">Категории</h2>
             <div class="row">
-                <div class="col"><a href="#" class="card d-flex flex-column align-items-center">
-                    <svg height="24" width="24" class="card-icon"><use href="img/icons.svg#brush"></use>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0"><a href="#" class="card d-flex flex-column align-items-center">
+                    <svg height="24" class="card-icon"><use href="img/icons.svg#brush"></use>
                     </svg>
                   <span class="card-text">Дизайн</span>
                         <!-- /.card-text --></a>
                     <!-- /.card -->
                 </div>
                 <!-- /.col -->
-                <div class="col"><a href="#" class="card d-flex flex-column align-items-center">
-                    <svg height="24" width="24" class="card-icon"><use href="img/icons.svg#browser"></use>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0""><a href="#" class="card d-flex flex-column align-items-center">
+                    <svg height="24" class="card-icon"><use href="img/icons.svg#browser"></use>
                     </svg>
                     <span class="card-text">Разработка</span>
                         <!-- /.card-text --></a>
                     <!-- /.card -->
                 </div>
                 <!-- /.col -->
-                <div class="col"><a href="#" class="card d-flex flex-column align-items-center"><svg height="24" width="24" class="card-icon"><use href="img/icons.svg#edit"></use>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0""><a href="#" class="card d-flex flex-column align-items-center"><svg height="24" class="card-icon"><use href="img/icons.svg#edit"></use>
                 </svg>
                     <span class="card-text">Копирайтинг</span>
                         <!-- /.card-text --></a>
                     <!-- /.card -->
                 </div>
                 <!-- /.col -->
-                <div class="col">
-                    <a href="#" class="card d-flex flex-column align-items-center"><svg height="24" width="24" class="card-icon"><use href="img/icons.svg#fingerprint"></use>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0"">
+                    <a href="#" class="card d-flex flex-column align-items-center"><svg height="24" class="card-icon"><use href="img/icons.svg#fingerprint"></use>
                 </svg>
                     <span class="card-text">Безопасность</span>
                         <!-- /.card-text --></a
@@ -105,14 +115,14 @@
                     <!-- /.card -->
                 </div>
                 <!-- /.col -->
-                <div class="col"><a href="#" class="card d-flex flex-column align-items-center"><svg height="24" width="24" class="card-icon"><use href="img/icons.svg#camera"></use>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0""><a href="#" class="card d-flex flex-column align-items-center"><svg height="24" class="card-icon"><use href="img/icons.svg#camera"></use>
                     </svg>
                     <span class="card-text">Видео</span>
                         <!-- /.card-text --></a>
                     <!-- /.card -->
                 </div>
                 <!-- /.col -->
-                <div class="col"><a href="#" class="card d-flex flex-column align-items-center"><svg height="24" width="24" class="card-icon"><use href="img/icons.svg#school"></use>
+                <div class="col-lg-2 col-md-4 col-sm-6 mb-4 mb-lg-0"><a href="#" class="card d-flex flex-column align-items-center"><svg height="24" class="card-icon"><use href="img/icons.svg#school"></use>
                 </svg>
                     <span class="card-text">Образование</span>
                         <!-- /.card-text --></a>
@@ -126,14 +136,14 @@
     <section class="section offerS">
         <div class="container">
             <h2 class="section-title">Свежие вакансии</h2>
-            <div class="offer d-flex align-items-center">
-                <div class="offer-img"></div>
-                <div class="offer-title">
+            <div class="offer d-flex align-items-center flex-column flex-lg-row">
+                <div class="offer-img mb-4 mb-lg-0"></div>
+                <div class="offer-title mb-4 mb-lg-0">
                     <h3 class="offer-headin">Front-end разработчик</h3>
                     <span class="offer-place">Технопарк, Казань</span>
                 </div>
                 <!--/.offer-title -->
-                <span class="salary">65 000 ₽</span>
+                <span class="salary mb-4 mb-lg-0">65 000 ₽</span>
                 <div class="tags-group">
                     <span class="tags-label">Требования:</span>
                     <a href="#" class="tag">React</a>
@@ -141,17 +151,17 @@
                     <a href="#" class="tag">SASS</a>
                 </div>
                 <!--/.tags-group -->
-                <a href="#" class="more">Подробнее →</a>
+                <a href="#" class="more mt-5 mt-lg-0">Подробнее →</a>
             </div>
             <!--/.offer -->
-            <div class="offer d-flex align-items-center">
-                <div class="offer-img"></div>
-                <div class="offer-title">
+            <div class="offer d-flex align-items-center flex-column flex-lg-row">
+                <div class="offer-img mb-4 mb-lg-0"></div>
+                <div class="offer-title mb-4 mb-lg-0">
                     <h3 class="offer-headin">Front-end разработчик</h3>
                     <span class="offer-place">Технопарк, Казань</span>
                 </div>
                 <!--/.offer-title -->
-                <span class="salary">65 000 ₽</span>
+                <span class="salary mb-4 mb-lg-0">65 000 ₽</span>
                 <div class="tags-group">
                     <span class="tags-label">Требования:</span>
                     <a href="#" class="tag">React</a>
@@ -159,17 +169,17 @@
                     <a href="#" class="tag">SASS</a>
                 </div>
                 <!--/.tags-group -->
-                <a href="#" class="more">Подробнее →</a>
+                <a href="#" class="more mt-5 mt-lg-0">Подробнее →</a>
             </div>
             <!--/.offer -->
-            <div class="offer d-flex align-items-center">
-                <div class="offer-img"></div>
-                <div class="offer-title">
+            <div class="offer d-flex align-items-center flex-column flex-lg-row">
+                <div class="offer-img mb-4 mb-lg-0"></div>
+                <div class="offer-title mb-4 mb-lg-0">
                     <h3 class="offer-headin">Front-end разработчик</h3>
                     <span class="offer-place">Технопарк, Казань</span>
                 </div>
                 <!--/.offer-title -->
-                <span class="salary">65 000 ₽</span>
+                <span class="salary mb-4 mb-lg-0">65 000 ₽</span>
                 <div class="tags-group">
                     <span class="tags-label">Требования:</span>
                     <a href="#" class="tag">React</a>
@@ -177,17 +187,17 @@
                     <a href="#" class="tag">SASS</a>
                 </div>
                 <!--/.tags-group -->
-                <a href="#" class="more">Подробнее →</a>
+                <a href="#" class="more mt-5 mt-lg-0">Подробнее →</a>
             </div>
             <!--/.offer -->
-            <div class="offer d-flex align-items-center">
-                <div class="offer-img"></div>
-                <div class="offer-title">
+            <div class="offer d-flex align-items-center flex-column flex-lg-row">
+                <div class="offer-img mb-4 mb-lg-0"></div>
+                <div class="offer-title mb-4 mb-lg-0">
                     <h3 class="offer-headin">Front-end разработчик</h3>
                     <span class="offer-place">Технопарк, Казань</span>
                 </div>
                 <!--/.offer-title -->
-                <span class="salary">65 000 ₽</span>
+                <span class="salary mb-4 mb-lg-0">65 000 ₽</span>
                 <div class="tags-group">
                     <span class="tags-label">Требования:</span>
                     <a href="#" class="tag">React</a>
@@ -195,7 +205,7 @@
                     <a href="#" class="tag">SASS</a>
                 </div>
                 <!--/.tags-group -->
-                <a href="#" class="more">Подробнее →</a>
+                <a href="#" class="more mt-5 mt-lg-0">Подробнее →</a>
             </div>
             <!--/.offer -->
             <button class="button-primary more-vacancies">
@@ -213,7 +223,7 @@
                     <input type="text" class="input" placeholder="E-mail">
                     <button class="button-primary">
                         <img class="button-icon" src="img/mailing/Vector.svg" alt="icon: envelope">
-                        <span class="button-text">Подписаться</span>
+                        <span class="button-text d-none d-md-inline-block">Подписаться</span>
                     </button>
                 </div>
             </form>
@@ -224,13 +234,13 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0 col-7 mx-auto">
                     <img src="img/header/logo.svg" alt="Logo: FindYourJob" class="footer-logo">
                     <p class="footer-text">Сайт с вакансиями для тех,<br> кто ищет удаленную работу</p>
                     <span class="footer-copyright">© 2021</span>
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0 col-7 mx-auto">
                     <h3 class="footer-title">Свяжитесь с нами</h3>
                     <ul class="footer-list">
                         <li class="footer-list-iten">
@@ -242,7 +252,7 @@
                     </ul>
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0 col-7 mx-auto">
                     <h3 class="footer-title">Информация</h3>
                     <ul class="footer-list">
                         <li class="footer-list-iten">
@@ -257,7 +267,7 @@
                     </ul>
                 </div>
                 <!-- /.col-3 -->
-                <div class="col-3">
+                <div class="col-lg-3 col-sm-6 mb-5 mb-lg-0 col-7 mx-auto">
                     <h3 class="footer-title">Навигация по сайту</h3>
                     <ul class="footer-list">
                         <li class="footer-list-iten">
@@ -276,5 +286,6 @@
             <!-- /.row -->
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
